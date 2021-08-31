@@ -1,0 +1,27 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huydinh14/Blog.git"
+  },
+  "keywords": [
+    "blog",
+    "huydinh"
+  ],
+  "author": "huydinh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huydinh14/Blog/issues"
+  },
+  "homepage": "https://github.com/huydinh14/Blog#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
