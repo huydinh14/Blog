@@ -22,12 +22,18 @@
     "url": "https://github.com/huydinh14/Blog/issues"
   },
   "homepage": "https://github.com/huydinh14/Blog#readme",
+  "lint-staged": {
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+  },
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.3.3"
   },
   "devDependencies": {
+    "husky": "^7.0.0",
+    "lint-staged": "^11.1.2",
     "morgan": "^1.10.0",
-    "node-sass": "^6.0.1"
+    "node-sass": "^6.0.1",
+    "prettier": "^2.3.2"
   }
 }
