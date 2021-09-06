@@ -2,14 +2,19 @@ const Course = require('../models/Course');
 
 class SiteController {
     //
-    home(req, res) {
-        Course.find({}, function (err, course) {
-            if (!err) {
-                res.json(course);
-                return;
-            }
-            res.status(404).json({ error: 'Not Found' });
-        });
+    home(req, res, next) {
+        // Course.find({}, function (err, course) {
+        //     if (!err) {
+        //         res.json(course);
+        //         return;
+        //     }
+        //     next(err);
+        // });
+
+        Course.find({})
+            .lean()
+            .then((courses) => res.render('home', { courses }))
+            .catch(next);
 
         //res.render('home');
     }

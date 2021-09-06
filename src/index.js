@@ -10,7 +10,7 @@ const db = require('./config/db');
 
 //app.use(express.static(path.join(__dirname, 'public')))
 
-// Connet to DB
+// Connect to DB
 db.connect();
 // HTTP logger
 app.use(morgan('combined'));

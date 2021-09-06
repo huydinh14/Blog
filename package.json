@@ -5,8 +5,9 @@
   "main": "src/index.js",
   "scripts": {
     "start": "nodemon --inspect src/index.js",
-    "watch": "node-sass --watch src/resources/scss/app.scss src/public/css/app.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass src/resources/scss/app.scss --output src/public/css",
+    "watch": "nodemon -e scss -x npm run build-css"
   },
   "repository": {
     "type": "git",

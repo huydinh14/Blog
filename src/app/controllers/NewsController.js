@@ -5,7 +5,7 @@ class NewsController {
     }
 
     show(req, res) {
-        res.send('Kim Bich');
+        res.send('Kim Bitch');
     }
 }
 
